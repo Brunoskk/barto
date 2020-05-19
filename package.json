@@ -1,0 +1,20 @@
+{
+  "name": "barto",
+  "version": "1.0.0",
+  "description": "A bot discord create for me BrunoSkk",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brunoskk",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-google": "^0.14.0",
+    "nodemon": "^2.0.4"
+  }
+}

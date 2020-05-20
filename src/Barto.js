@@ -22,7 +22,7 @@ module.exports = class Barto extends Client {
 						return comands;
 					});
 					console.log(stringComands);
-					message.channel.send('no momento so atendo pelo comando !ping');
+					message.channel.send('no momento so atendo pelo comando !ping teste');
 				}
 				else {
 					message.channel.send('Pô você não falou nada com nada, tente digitar (!help)');

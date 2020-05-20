@@ -6,7 +6,7 @@ module.exports = class Barto extends Client {
 		super();
 		this.TOKEN = token;
 		this.PREFIX = prefix;
-		this.COMANDS = ['ping'];
+		this.COMANDS = [{ comands: '!ping,' }];
 	}
 
 
@@ -18,15 +18,11 @@ module.exports = class Barto extends Client {
 					message.channel.send(`Pong, ainda estou em desenvolvimento - Quantidade atual de usuarios = ${message.guild.memberCount}`);
 				}
 				else if (message.content == '!help') {
-
-					const textHelp = {
-						text: `#############################################
-#Favor no momento os comandos possiveis na qual eu respondo e:  
-#!ping														   			              
-#															   			  			
-############################################` };
-
-					message.channel.send(textHelp.text);
+					const stringComands = this.COMANDS.comands.map((comands) =>{
+						return comands;
+					});
+					console.log(stringComands);
+					message.channel.send('no momento so atendo pelo comando !ping teste');
 				}
 				else {
 					message.channel.send('Pô você não falou nada com nada, tente digitar (!help)');
